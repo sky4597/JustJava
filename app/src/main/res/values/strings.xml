@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="ten_rupees">₹10</string>
+    <string name="enh">Enter name here!</string>
+    <string name="ts">Toppings</string>
+    <string name="wc">Whipped cream</string>
+    <string name="choco">Chocolate</string>
+    <string name="quant">Quantity:</string>
+    <string name="os">order summary</string>
+    <string name="ord">Order</string>
+    <string name="yes">Yes!</string>
+    <string name="no">No!</string>
+    <string name="order_summary_name">Name: </string>
+    <string name="order_summary_whipped_cream">Add whipped cream? </string>
+    <string name="order_summary_chocolate">Add chocolate? </string>
+    <string name="order_summary_price">Total: </string>
+    <string name="thank_you">Thank you! </string>
+    <string name="order_summary_email_subject">Coffee Order for</string>
+</resources>

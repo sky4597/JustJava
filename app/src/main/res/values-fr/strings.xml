@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Juste Java</string>
+    <string name="ten_rupees">₹10</string>
+    <string name="enh">Entrez le nom ici!</string>
+    <string name="ts">Garnitures</string>
+    <string name="quant">Quantité:</string>
+    <string name="os">Récapitulatif de la commande</string>
+    <string name="ord">Commande</string>
+    <string name="wc">Crème fouettée</string>
+    <string name="choco">Chocolat</string>
+    <string name="yes">Oui!</string>
+    <string name="no">Non!</string>
+
+
+    <string name="order_summary_name">Nom: </string>
+
+    <!--
+      Whipped cream topping for the order summary. It will be shown in the format of
+      "Add whipped cream? true" or "Add whipped cream? false". [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_whipped_cream">Ajouter la crème fouettée? </string>
+
+    <!--
+      Chocolate topping for the order summary. It will be shown in the format of
+      "Add chocolate? true" or "Add chocolate? false". [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_chocolate">Ajouter du chocolat? </string>
+
+    <!--
+      Quantity of coffee cups for the order summary. It will be shown in the format of
+      "Quantity: 2", where 2 is the number of cups ordered. [CHAR LIMIT=NONE]
+    -->
+
+    <!--
+      Total price for the order summary. It will be shown in the format of
+      "Total: $10" where $10 is the price. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_price">Total: </string>
+
+    <!-- Thank you message for the order summary. [CHAR LIMIT=NONE] -->
+    <string name="thank_you">Merci! </string>
+
+    <!--
+      Subject line for the order summary email. It will be in the format of
+      "Just Java order for Amy" where Amy is the user's name. [CHAR LIMIT=NONE]
+    -->
+    <string name="order_summary_email_subject">Ordre de café pour </string>
+</resources>
+
+
+
