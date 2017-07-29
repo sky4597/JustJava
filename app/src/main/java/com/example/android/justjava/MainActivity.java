@@ -171,7 +171,9 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given price on the screen.
      */
     private String displayPrice(int number) {
-        String price = NumberFormat.getCurrencyInstance(new Locale("en", "in")).format(number);
+        String price = NumberFormat.getCurrencyInstance().format(number);
+        price=price.replace(',','.');
+
         return price;
     }
 }

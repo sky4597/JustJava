@@ -96,7 +96,7 @@
             android:id="@+id/price_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ten_rupees"
+            android:text="@string/ten_units"
             android:textColor="@android:color/black"
             android:textSize="16sp"
 

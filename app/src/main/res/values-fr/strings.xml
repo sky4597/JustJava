@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Juste Java</string>
-    <string name="ten_rupees">₹10</string>
+    <string name="ten_units">10€</string>
     <string name="enh">Entrez le nom ici!</string>
     <string name="ts">Garnitures</string>
     <string name="quant">Quantité:</string>
@@ -11,6 +11,9 @@
     <string name="choco">Chocolat</string>
     <string name="yes">Oui!</string>
     <string name="no">Non!</string>
+
+
+
 
 
     <string name="order_summary_name">Nom: </string>
