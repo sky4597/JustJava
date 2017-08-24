@@ -8,6 +8,7 @@
 package com.example.android.justjava;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -31,10 +32,32 @@ public class MainActivity extends AppCompatActivity {
     int quantity = 2;
     String b, c;
 
+    MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.imp);
+        boolean isLang = Locale.getDefault().getLanguage().equals("fr");
+        Log.i("MainActivity","The value of \'isLang\' is "+isLang);
+
+
+
+        if(isLang)
+        mediaPlayer.start();
+
+
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mediaPlayer.stop();
+        mediaPlayer.release();
     }
 
     /**
@@ -128,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
     {
         String priceMessage = getString(R.string.order_summary_name) +" "+name;
+        Log.i("MainActivity","My name is "+getString(R.string.order_summary_name));
         priceMessage += "\n"+getString(R.string.order_summary_whipped_cream)+" " + b;
         priceMessage += "\n"+getString(R.string.order_summary_chocolate)+" " + c;
         priceMessage += "\n"+getString(R.string.quant)+" " + quantity;

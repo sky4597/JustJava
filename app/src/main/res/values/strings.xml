@@ -16,4 +16,5 @@
     <string name="order_summary_price">Total: </string>
     <string name="thank_you">Thank you! </string>
     <string name="order_summary_email_subject">Coffee Order for</string>
+    <string name="initial_quantity_value">2</string>
 </resources>
