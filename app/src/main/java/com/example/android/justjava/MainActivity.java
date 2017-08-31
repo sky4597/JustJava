@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.imp);
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.psych);
         boolean isLang = Locale.getDefault().getLanguage().equals("fr");
         Log.i("MainActivity","The value of \'isLang\' is "+isLang);
 
