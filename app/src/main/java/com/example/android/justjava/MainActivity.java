@@ -22,8 +22,6 @@ import android.widget.Toast;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import static android.R.attr.order;
-
 /**
  * This app displays an order form to order coffee.
  */
@@ -56,8 +54,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mediaPlayer.stop();
-        mediaPlayer.release();
+        /*
+         Check if media player is playing.
+         Seems like onPause() is for the app, i.e. when the app is paused.
+         In current use, mediaPlayer.stop() is called to stop the song.
+         However it can still be called whenever the song is already stopped,
+         i.e. when mediaPlayer() has not started which is which results in an IllegalStateException
+         */
+        if (mediaPlayer.isPlaying()) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        }
     }
 
     /**
